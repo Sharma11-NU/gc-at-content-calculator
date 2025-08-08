@@ -29,7 +29,7 @@ AT Content =  ((A + T)/length) * 100
    
    pip install matplotlib 
 
-   Place your FASTA file in the project folder (e.g., example_sequence.fasta).
+   Places the FASTA file in the project folder (e.g., example_sequence.fasta.txt)
 
 Run the script from the terminal:
 
@@ -41,7 +41,7 @@ Save the results to gc_at_content_results.csv.
 Display a bar plot of GC and AT content.
 
 ## Plot Explanation
-The script uses the matplotlib library to create a bar plot that visually compares the GC content and AT content percentages. This helps you quickly understand the composition of your DNA sequence in a clear and graphical way.
+The script uses the matplotlib library to create a bar plot that visually compares the GC content and AT content percentages. This helps to quickly understand the composition of your DNA sequence in a clear and graphical way.
 
 The x-axis shows the categories: GC Content and AT Content.
 The y-axis shows their corresponding percentages.
