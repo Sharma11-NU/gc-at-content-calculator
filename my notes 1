@@ -1,0 +1,27 @@
+There are just my note to explain the code and the functions in more details for future reference.
+
+GC content is important because it affects DNA stability —
+higher GC content means more hydrogen bonds (G≡C has 3 bonds, A=T has 2).
+AT content can indicate certain genome features (e.g., promoter regions in some organisms).
+
+Being able to parse FASTA files is 1st step in almost any bioinformatics task — this skill scales up to huge datasets
+
+# A gc_at_content is a  python program that:
+1. Reads a DNA sequence from a FASTA file (a standard format in bioinformatics)
+2. Calculates:
+   Length of the sequence
+   A count (number of Adenine bases)
+   T count (number of Thymine bases)
+   GC content — percentage of sequence made up of G (Guanine) and C (Cytosine)
+   AT content — percentage of sequence made up of A and T
+# What is FASTA format?
+ 1. line starts with ' > ' (header)
+ 2. FASTA could be nucleotide or protein
+so, it is important that before I calculate the %, I should skip the header and also join all the sequence lines into one long string.
+
+sys : lets me access command-line arguments
+line.strip() removes spaces/newlines
+.upper() makes sure everything is uppercase (A, T, G, C)
+Important: Think of sys.argv[1] in our code like “the package” you’re giving to Python.
+If you don’t give the right path to the package, Python has nothing to open.
+
